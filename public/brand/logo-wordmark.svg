@@ -1,0 +1,12 @@
+<svg width="260" height="48" viewBox="0 0 260 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="14" fill="#08111F"/>
+  <path d="M10 12H18L24 29L30 12H38L27 36H21L10 12Z" fill="url(#paint0_linear)"/>
+  <text x="62" y="31" fill="#F4F7FB" font-family="Arial, sans-serif" font-size="26" letter-spacing="2">VELORA</text>
+  <text x="192" y="31" fill="#A7B4C9" font-family="Arial, sans-serif" font-size="26" letter-spacing="2">STUDIO</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="10" y1="12" x2="38" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#65E7FF"/>
+      <stop offset="1" stop-color="#FF9F7A"/>
+    </linearGradient>
+  </defs>
+</svg>

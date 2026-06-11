@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050816;
+  --foreground: #f4f7fb;
+  --muted: #94a3b8;
+  --border: rgba(255, 255, 255, 0.12);
+  --panel: rgba(11, 18, 34, 0.7);
+  --accent: #65e7ff;
+  --font-sans: "Manrope", "Segoe UI", sans-serif;
+  --font-display: "Sora", "Avenir Next", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(109, 124, 255, 0.2), transparent 28%),
+    radial-gradient(circle at 80% 20%, rgba(101, 231, 255, 0.15), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(255, 159, 122, 0.12), transparent 28%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(101, 231, 255, 0.26);
+  color: #fff;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    @apply text-slate-300;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12;
+  }
+
+  .glass-panel {
+    @apply border border-white/10 bg-white/[0.04] backdrop-blur-xl;
+  }
+
+  .section-space {
+    @apply py-20 md:py-28;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-white via-brand-cyan to-brand-peach bg-clip-text text-transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
